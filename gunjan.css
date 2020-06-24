@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	font-size: 18px;
+	font-family: " sans serif",Arial,Verdana, Courier, monospace;
+}
+
+#white_heading {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	font-size: 42px; 
+	font-style: normal; 
+	font-variant: normal;
+}
+ 
+#heading {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	font-size: 42px; 
+	font-style: normal; 
+	font-variant: normal;
+	color: #00305b;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	font-size: 20px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 15.4px; 
+	color: #00305b; 
+}
+h3 {
+	font-family: "Arial", "Lucida Grande", sans-serif; 
+	font-size: 18px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 20px;
+	
+}
+
+p{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	font-size: 15px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 500; 
+	line-height: 20px; 
+	color: #0F4C85;
+}
+
+.parallax {
+	background-image: url("sunsettree.jpg");
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.left {
+  display: inline-block;
+  height: 600px;
+  left: 0;
+  width: 40%;
+  position: absolute;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-color: #ccdef0;
+}
+
+/* Control the right side */
+.right {
+  list-style-type: square;
+  display: inline-block;
+  height: 600px;
+  right: 0;
+  width: 60%;
+  position: absolute;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-color:white ;
+}
+
+.content {
+  position: relative;
+  top: 0;
+  left:0;
+  margin: 0;
+  height: 800px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 40%;
+}
+ul {
+  list-style-position: outside;
+  list-style-type: square;
+}
+ul li {
+  margin: 5px;
+}
+
+table {
+	width: 90%;
+	height: 100%;
+	border: black;
+	top: 0;
+	left:0;
+	right: 10%;
+}
+td {
+	padding: 5%;
+}
+
