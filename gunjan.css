@@ -61,7 +61,7 @@ p{
 .centered {
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -121,3 +121,9 @@ td {
 	padding: 5%;
 }
 
+@media screen and (max-width:600px) {
+  .content, .left, .right {
+    width:100%; 
+    position:relative;/* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
