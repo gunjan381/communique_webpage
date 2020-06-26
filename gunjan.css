@@ -1,9 +1,9 @@
 body {
 	margin: 0;
-	font-family: " sans serif",Arial,Verdana, Courier, monospace;
+	/*font-family: " sans serif",Arial,Verdana, Courier, monospace;*/
 }
 
-h2 {
+.heading2 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
 	font-size: 20px; 
 	font-style: normal; 
@@ -12,7 +12,7 @@ h2 {
 	line-height: 15.4px; 
 	color: #00305b; 
 }
-h3 {
+.heading3 {
 	font-family: "Arial", "Lucida Grande", sans-serif; 
 	font-size: 18px; 
 	font-style: normal; 
@@ -22,7 +22,7 @@ h3 {
 	
 }
 
-p{
+.paragraphs{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
 	font-size: 15px; 
 	font-style: normal; 
