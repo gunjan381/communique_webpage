@@ -79,26 +79,26 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:40%;
+    width:50%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
     .Navbaritems a{
-    font-size: 30px;
+    font-size: 15px;
   }
 }
 .burger-active{
   transform: translateX(0%);
 }
 .close .line1{
-  transform: rotate(45deg)translate(13px,14px);
+  transform: rotate(45deg)translate(9px,11px);
 }
 .close .line2{
   opacity: 0;
 
 }
 .close .line3{
-  transform: rotate(-45deg) translate(13px,-14px);
+  transform: rotate(-45deg) translate(9px,-11px);
 }
 
 .heading2 {
