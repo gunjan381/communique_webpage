@@ -1,4 +1,4 @@
-body{
+/*body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,18 +39,65 @@ nav{
 }
 .Navbaritems a:hover{
   color: blue;
+}/*AbD content begins */
+body{
+  margin:0;
+  background-color: black;
 }
 .burger{
   display: none;
   cursor:pointer;
 }
+
+*{
+  margin:0;
+  padding:0;
+}
+
+#nav-bar{
+  position: sticky;
+  top : 0;
+  z-index: 10;
+}
+
+.navbar-brand img{
+    height: 40px;
+}
+
+.navbar-nav li{
+  padding: 0 10px;
+  float: right;
+}
+
+.navbar-nav li a{
+  float: right;
+  text-align: left;
+}
+
+#nav-bar ul li a:hover{
+  color: #007bff !important;
+}
+
+.navbar{
+  background: #fff;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+.nav-link{
+  color: #555 !important;
+  font-weight: 300;
+  font-size: 14px;
+}
+/*AbD content end*/
 .burger div{
   width: 20px;
   height: 2px;
   margin: 5px;
   background-color: black;
-
 }
+
 @media screen and (max-width:1024px)
 {
   body{
@@ -119,7 +166,57 @@ nav{
 	line-height: 20px;
 
 }
+.fade-in {
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 .paragraphs{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 15px;
@@ -136,6 +233,10 @@ nav{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.abcd{
+  height: 800px;
+  background-color: black;
 }
 
 .content {
@@ -161,6 +262,7 @@ nav{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 42px;
 	font-style: normal;
+  font-weight: 50px;
 	font-variant: normal;
 }
 
@@ -174,62 +276,96 @@ nav{
 }
 
 .rightcontent {
-  list-style-type: square;
+  list-style-type: none;
   font-size: 200%;
-  height: auto;
-  right: 0;
-  width:55%;
+  right:0;
+  height:100%;
+  width:60%;
   position: absolute;
   overflow-x: hidden;
-  background-color:white ;
+  background-color: rgb(102, 0, 102);
   margin: 0;
+  padding-left:  5%;
 }
+.fas{
+  color: white;
+}
+/*AbD content*/
+/*#practicearea .list1{
+  position:relative;
+  left : 50%;
+  padding-top: 7%;
+}
+
+#practicearea .list1 ul li{
+  font-size: 4vh;
+  line-height: 500%;
+  color:#004d99;
+}
+#practicearea .list2{
+  position:absolute;
+  top:146.4%;
+  left : 75%;
+  padding-top: 7%;
+}
+
+#practicearea .list2 ul li{
+  font-size: 4vh;
+  line-height: 500%;
+  color:#004d99;
+}
+
+ul.a{
+  list-style-type: square;
+}
+
+ul.b{
+  list-style-type: square;
+}*/
 
 .left {
   display: inline-block;
-  height: 70%;
+  height: 100%;
   left: 0;
   width: 40%;
   position: absolute;
   overflow-x: hidden;
-  padding-top: 20px;
-  background-color: #ccdef0;
+  margin: 0;
+  background-color: #ff6666;
 }
 
-@media screen and (max-width:800px) {
-    .right {
+
+@media screen and (max-width:1024px) {
+   .rightcontent {
+   	width: 100%;
+    margin: 0;
+    height: auto;
+   }
+   .abcd{
+    padding: 0;
+   }
+   .parallax {
+    height: 500px;
+   }
+   .left {
     width:100%;
+    height: 150px;
+    margin:0;
     position:relative;
-	}
-}
-@media screen and (max-width:800px) {
+  }
   .content {
     width: 90%;
     height: 60%;
     position:relative;
     top:25%;
     left: 5%;
-}
-@media screen and (max-width:800px) {
-   .left {
+  }
+  .right {
     width:100%;
-    height: 150px;
     position:relative;
-	}
-}
-@media screen and (max-width:800px) {
-   #heading {
-   	font-size: 36px;
-   }
-}
-@media screen and (max-width:800px) {
-   .parallax {
-   	height: 500px;
-   }
-}
-@media screen and (max-width:800px) {
-   .rightcontent {
-   	width: 80%;
-   	left:5%;
-   }
+  }
+  #heading {
+    font-size: 100%;
+  }
+  
 }
