@@ -1,0 +1,395 @@
+/*AbD content begins */
+body{
+  margin:0;
+  background-color: black;
+}
+.burger{
+  display: none;
+  cursor:pointer;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+#nav-bar{
+  position: sticky;
+  top : 0;
+  z-index: 10;
+}
+
+.navbar-brand img{
+    height: 40px;
+}
+
+.navbar-nav li{
+  padding: 0 10px;
+  float: right;
+}
+
+.navbar-nav li a{
+  float: right;
+  text-align: left;
+}
+
+#nav-bar ul li a:hover{
+  color: #007bff !important;
+}
+
+.navbar{
+  background: #fff;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+.nav-link{
+  color: #555 !important;
+  font-weight: 300;
+  font-size: 14px;
+}
+/*AbD content end*/
+.burger div{
+  width: 20px;
+  height: 2px;
+  margin: 5px;
+  background-color: black;
+}
+
+@media screen and (max-width:1024px)
+{
+  body{
+    overflow-x: hidden;
+  }
+  .burger{
+    display: block;
+  }
+    .logo{
+    font-size: 5vh;
+  }
+  /*.burger div{
+    width:8vw;
+    height:0.5vh;
+    margin: 10px;
+    background-color: black;
+  }*/
+  .Navbaritems{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top:10vh;
+    background-color:rgba(255,255,255,0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    transform: translateX(100%);
+    transition: transform 1s ease-in;
+  }
+    .Navbaritems a{
+    font-size: 15px;
+  }
+}
+.burger-active{
+  transform: translateX(0%);
+}
+.close .line1{
+  transform: rotate(45deg)translate(9px,11px);
+}
+.close .line2{
+  opacity: 0;
+
+}
+.close .line3{
+  transform: rotate(-45deg) translate(9px,-11px);
+}
+
+.heading2 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 15.4px;
+	color: #00305b;
+}
+.heading3 {
+	font-family: "Arial", "Lucida Grande", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 20px;
+
+}
+.fade-in {
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.paragraphs{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 20px;
+	color: #0F4C85;
+}
+.parallax {
+	background-image: url("sunsettree.jpg");
+	height: 800px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.abcd{
+  height: 800px;
+  background-color: black;
+}
+
+.content {
+  position: relative;
+  top: 0;
+  left:0;
+  margin: 0;
+  height: 100%;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 40%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+}
+
+#white_heading {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 42px;
+	font-style: normal;
+  font-weight: 50px;
+	font-variant: normal;
+}
+
+#blue_heading {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 42px;
+	font-style: normal;
+	font-variant: normal;
+	color: #00305b;
+	font-weight: 700;
+}
+
+.rightcontent {
+  list-style-type: none;
+  font-size: 200%;
+  right:0;
+  height:147%;
+  width:60%;
+  position: absolute;
+  overflow-x: hidden;
+  /*background-color: rgb(102, 0, 102);*/
+  background:linear-gradient(to right, #993366 0%, #ff3399 100%);;
+  margin: 0;
+  padding-top: 7%;
+  padding-left:  5%;
+}
+
+.left {
+  display: inline-block;
+  height: 147%;
+  left: 0;
+  width: 40%;
+  position: absolute;
+  overflow-x: hidden;
+  margin: 0;
+  /*background-color: #ff6666;*/
+  background: linear-gradient(to left,#660033 0%, #ff6666 100%);
+  color:white;
+}
+/*AbD content*/
+/*#practicearea .list1{
+  position:relative;
+  left : 50%;
+  padding-top: 7%;
+}
+
+#practicearea .list1 ul li{
+  font-size: 4vh;
+  line-height: 500%;
+  color:#004d99;
+}
+#practicearea .list2{
+  position:absolute;
+  top:146.4%;
+  left : 75%;
+  padding-top: 7%;
+}
+
+#practicearea .list2 ul li{
+  font-size: 4vh;
+  line-height: 500%;
+  color:#004d99;
+}
+
+ul.a{
+  list-style-type: square;
+}
+
+ul.b{
+  list-style-type: square;
+}*/
+
+@media screen and (max-width:1024px) {
+  .rightcontent {
+   width: 100%;
+   margin: 0;
+   height:auto;
+   /*height:800px;*/
+  }
+   .abcd{
+    padding: 0;
+   }
+   .parallax {
+    height: 500px;
+   }
+   .left {
+    width:100%;
+    height: 200px;
+    margin:0;
+    position:relative;
+  }
+  .content {
+    width: 90%;
+    height: 60%;
+    position:relative;
+    top:25%;
+    left: 5%;
+  }
+  .right {
+    width:100%;
+    position:relative;
+  }
+  #heading {
+    font-size: 100%;
+  }
+  #our-vision {
+    width:100%;
+    line-height: 120%;
+    position:relative;
+    font-size: 85%;
+  }
+  .ourvision{
+    font-size: 90%;
+    line-height: 0%;
+  }
+  .bg{
+    height:150%;
+    position:relative;
+  }
+  .bg2{
+    height: 100%;
+  }
+}
+.bg{
+  width:100% ;
+  height:600px;
+  /*background-color:#00305b;*/
+  background: linear-gradient(to top, #0099ff 0%, #000099 100%);
+}
+
+hr{ border-style: solid;
+  border-color: #66e0ff;
+}
+/*End of part 2*/
+.accordion-section{
+  background: linear-gradient(to top left, #ffff66 0%, #6699ff 100%);
+  height:600px;
+  padding-top: 50px;
+}
+.container h2 {
+    font-family: Arial, Verdana;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #091f2f;
+}
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    /*background: #f4f4f4*/background: linear-gradient(to top left, #ffff66 0%, #6699ff 100%);
+    padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: black;
+    }
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.0rem;
+}
