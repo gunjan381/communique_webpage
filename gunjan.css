@@ -302,7 +302,7 @@ ul.b{
   .rightcontent {
    width: 100%;
    margin: 0;
-   height:auto;
+   height:720px;
    /*height:800px;*/
   }
    .abcd{
@@ -414,10 +414,10 @@ hr{ border-style: solid;
   clear: both;
   display: table;
 }
-[class*="col-"] {
+/* [class*="col-"] {
   float: left;
   padding: 15px;
-}
+} */
 
 html {
   font-family: "Lucida Sans", sans-serif;
@@ -470,14 +470,15 @@ html {
   float: left;
   padding: 15px;
 } */
-[class*="col-"] {
-  width: 45%;
+[class*="cols-"] {
+  padding-bottom: 25px;
+  width: 45%!important;
 }
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
 	.col-1 {width: 45%;}
 	.col-2 {width: 45%;}
 }
 @media only screen and (min-width: 600px) {
 	.col-s-1 {width: 45%;}
 	.col-s-2 {width: 45%;}
-}
+} */
