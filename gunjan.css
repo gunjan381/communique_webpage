@@ -1,45 +1,4 @@
-/*body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 10vh;
-  position: fixed;
-  z-index:50;
-  background-color: rgba(255,255,255,0.9);
-  font-family: Arial,Helvetica,sans-serif;
-
-}
-.logo{
-  letter-spacing: 5px;
-  font-size: 20px;
-  font-family: cursive;
-}
-.Navbaritems{
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-}
-.Navbaritems li{
-  list-style: none;
-}
-.Navbaritems a{
-  color: black;
-  text-decoration: none;
-  font-weight: 5;
-  font-size: 12px;
-}
-.Navbaritems a:active{
-  color: blue;
-}
-.Navbaritems a:hover{
-  color: blue;
-}/*AbD content begins */
+/*AbD content begins */
 body{
   margin:0;
   background-color: black;
@@ -109,12 +68,12 @@ body{
     .logo{
     font-size: 5vh;
   }
-  .burger div{
+  /*.burger div{
     width:8vw;
     height:0.5vh;
     margin: 10px;
     background-color: black;
-  }
+  }*/
   .Navbaritems{
     margin: 0;
     padding: 0;
@@ -128,7 +87,7 @@ body{
     align-items: center;
     width:50%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 1s ease-in;
   }
     .Navbaritems a{
     font-size: 15px;
@@ -279,16 +238,25 @@ body{
   list-style-type: none;
   font-size: 200%;
   right:0;
-  height:100%;
+  height:147%;
   width:60%;
   position: absolute;
   overflow-x: hidden;
   background-color: rgb(102, 0, 102);
   margin: 0;
+  padding-top: 7%;
   padding-left:  5%;
 }
-.fas{
-  color: white;
+
+.left {
+  display: inline-block;
+  height: 147%;
+  left: 0;
+  width: 40%;
+  position: absolute;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #ff6666;
 }
 /*AbD content*/
 /*#practicearea .list1{
@@ -323,23 +291,11 @@ ul.b{
   list-style-type: square;
 }*/
 
-.left {
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  width: 40%;
-  position: absolute;
-  overflow-x: hidden;
-  margin: 0;
-  background-color: #ff6666;
-}
-
-
 @media screen and (max-width:1024px) {
    .rightcontent {
    	width: 100%;
     margin: 0;
-    height: auto;
+    height: 800px;
    }
    .abcd{
     padding: 0;
@@ -349,7 +305,7 @@ ul.b{
    }
    .left {
     width:100%;
-    height: 150px;
+    height: 200px;
     margin:0;
     position:relative;
   }
@@ -367,5 +323,30 @@ ul.b{
   #heading {
     font-size: 100%;
   }
-  
+  #our-vision {
+    width:100%;
+    line-height: 120%;
+    position:relative;
+    font-size: 85%;
+  }
+  .ourvision{
+    font-size: 90%;
+    line-height: 0%;
+  }
+  .bg{
+    height:150%;
+    position:relative;
+  }
+  .bg2{
+    height: 100%;
+  }
 }
+.bg{
+  width:100% ;
+  height:600px;
+  background-color:#00305b;
+}
+
+hr{ border-style: solid;
+  border-color: #66e0ff;
+/*End of part 2*/
