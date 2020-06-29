@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -13,7 +12,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </script>
   </head>
 <body>
 	<!--<nav>
@@ -78,7 +76,7 @@
 		</div>
 	</div>
 </section>
-<section id="practicearea">
+<section id="practicearea" style="box-sizing:content-box!important;">
 	<div class="abcd">
 		<div class="left">
 			<div class="centered">
@@ -164,7 +162,7 @@
      <div class="ourvision" style="font-family:sans-serif; padding-top:50px;">
   <center><b>OUR</b> VISION </center></div>
   </h1>
-  <div style="height:50px;">
+  <div class="ourvision-height" style="height:50px;">
 
 
   </div>
@@ -174,11 +172,11 @@
   <p style="color:white;">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
   </p> </center> </br>
   <center><p style="color:white;">
-  This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+  This is a great space to write long text about your company and your services.Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
   </p></center> </br>
-  <center><p style="color:white;">
+  <!--<center><p style="color:white;">
     At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum.
-  </p></center>
+  </p></center>-->
 
   </div>
   </div>
@@ -187,40 +185,34 @@
   </div>
 
 <section id="our-attorneys">
-  <div style = "width:100% ; height:600px; background-color:#eaf4f6;">
-  <div style="height:20px;">
-    </div>
-  <h1 style="color:#004d4d;">
-  <div style="font-family:sans-serif"; font-size="42px";>
-  <center> OUR ATTORNEYS </center></div>
-  </h1>
-  </br></br>
-  <div style="float :left ;width:5%;height:3px;">
-  </div>
-  <div style="float :left ;width:20%;">
-  <img src="po.jpg" alt="po" width="100%" height="200"> <center>
+<div style = "width:100% ; min-height:fit-content; background-color:#eaf4f6;">
+  	<div style="height:20px;">
+	</div>
+  	<h1 style="color:#004d4d;">
+  	<div style="font-family:sans-serif"; font-size="42px";>
+  	<center> OUR ATTORNEYS </center></div>
+  	</h1>
+  	</br></br>
+  <!-- <div style="float :left ;width:5%;height:3px;">
+  </div> -->
+ 	<div class="attorneys_box"> 
+  		<div class="attorneys_card" >
+  	<img src="po.jpg" alt="po" width="100%" height="200"> <center>
   </br><div style="font-family:sans-serif;color:#00305b;"> AIDEN WATERS</br></br></div>
   <div style="font-family:sans-serif;color:#0F4C85;">   PARTNER</br></br>
    <hr>Tel: 123-456-7890</br>
   info@mysite.com
   </div> </center>
-  </div>
-
-  <div style="float :left ;width:15%;height:3px;">
-  </div>
-  <div style="float :left ;width:20%;">
+  		</div>
+  		<div class="attorneys_card" >
   <img src="po.jpg" alt="po" width="100%" height="200"> <center>
   </br><div style="font-family:sans-serif;color:#00305b;"> JULIA KNOLL</br></br></div>
     <div style="font-family:sans-serif;color:#0F4C85;"> PARTNER</br></br>
      <hr>Tel: 123-456-7890</br>
   info@mysite.com
    </div></center>
-  </div>
-
-  <div style="float :left ;width:15%;height:3px;">
-  </div>
-
-  <div style="float :left ;width:20%;">
+  		</div>
+  		<div class="attorneys_card">
   <img src="po.jpg" alt="po" width="100%" height="200"> <center>
   </br><div style="font-family:sans-serif;color:#00305b;"> JAMES LOPEZ</br></br></div>
      <div style="font-family:sans-serif;color:#0F4C85;">PARTNER</br></br>
@@ -228,20 +220,15 @@
   info@mysite.com
     </div>
 </center>
-    </div>
-
+    	</div>
+	</div>
 </div>
-
-
-  <div style="float :left ;width:5%;height:3px;">
-
-  </div>
 </section>
-<script src="navbar.js"></script>
+
 
 <!-- End of part2-->
-
-<div class="header-form" id="form">
+<section id="form">
+<div class="header-form">
   <h4><center>For any general inquiries, please fill in the following contact form:</center></h4>
 </div>
 <form name="contact_form" method="POST" action="execution.php">
@@ -265,7 +252,7 @@
     <input type="submit" name="Submit" value="Send">
   </div>
 </form>
-
+</section>
 <!-- End of form-->
 
 <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
@@ -345,6 +332,7 @@
 </section>
 </body>
 
+<script src="navbar.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
@@ -352,3 +340,4 @@
 <script src="validation.js"></script>
 
 </html>
+

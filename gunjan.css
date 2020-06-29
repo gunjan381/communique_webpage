@@ -1,7 +1,16 @@
 /*AbD content begins */
+/** {
+  -webkit-box-sizing: content-box !important;
+     -moz-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+*:before, *:after {
+  -webkit-box-sizing: content-box !important;
+     -moz-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}*/
 body{
   margin:0;
-  background-color: black;
 }
 .burger{
   display: none;
@@ -233,7 +242,6 @@ body{
 	color: #00305b;
 	font-weight: 700;
 }
-
 .rightcontent {
   list-style-type: none;
   font-size: 200%;
@@ -254,7 +262,7 @@ body{
   display: inline-block;
   height: 900px;
   left: 0;
-  width: 40%;
+  width: 45%;
   position: absolute;
   overflow-x: hidden;
   margin: 0;
@@ -299,6 +307,16 @@ ul.b{
 }*/
 
 @media screen and (max-width:1024px) {
+  * {
+    -webkit-box-sizing: content-box !important;
+       -moz-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+  }
+  *:before, *:after {
+    -webkit-box-sizing: content-box !important;
+       -moz-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+  }
   .rightcontent {
    width: 100%;
    margin: 0;
@@ -338,21 +356,21 @@ ul.b{
   }
   #our-vision {
     width:100%;
-    line-height: 120%;
-    position:relative;
+    line-height:15px;
+
     font-size: 85%;
   }
   .ourvision{
     font-size: 90%;
-    line-height: 0%;
   }
   .bg{
-    height:700px;
-    position: relative;
-    display: flex;
+    width:100%;
+  }
+  .ourvision-height{
+
   }
   .bg2{
-    height: 100%;
+    width:100%;
   }
 }
 .bg{
@@ -364,6 +382,18 @@ ul.b{
 
 hr{ border-style: solid;
   border-color: #66e0ff;
+}
+.attorneys_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+}
+.attorneys_card{
+  width:20%;
+  min-width: 170px;
+  padding: 0 20px 20px;
 }
 /*End of part 2*/
 .accordion-section{
@@ -459,7 +489,7 @@ html {
   flex-wrap: wrap;
 }
 .form_input{
-  width: 100%;
+  width: 95%;
   max-width: 200px;
 }
 .messg_area{
@@ -472,13 +502,18 @@ html {
 } */
 [class*="cols-"] {
   padding-bottom: 25px;
-  width: 45%!important;
+  width: 45%;
+  min-width: 170px;
 }
-/* @media only screen and (min-width: 768px){
-	.col-1 {width: 45%;}
-	.col-2 {width: 45%;}
+@media only screen and (min-width: 768px){
+	.cols-1 {width: 45%;}
+	.cols-2 {width: 45%;}
 }
 @media only screen and (min-width: 600px) {
-	.col-s-1 {width: 45%;}
-	.col-s-2 {width: 45%;}
-} */
+	.cols-s-1 {width: 45%;}
+	.cols-s-2 {width: 45%;}
+}
+@media screen and (max-width: 700px){
+  .main_data_form{justify-content: center;}
+  .cols-2{min-height: fit-content;}
+}
