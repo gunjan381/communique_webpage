@@ -383,6 +383,18 @@ ul.b{
 hr{ border-style: solid;
   border-color: #66e0ff;
 }
+.attorneys_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+}
+.attorneys_card{
+  width:20%;
+  min-width: 170px;
+  padding: 0 20px 20px;
+}
 /*End of part 2*/
 .accordion-section{
   background: linear-gradient(to top left, #ffff66 0%, #6699ff 100%);
@@ -477,7 +489,7 @@ html {
   flex-wrap: wrap;
 }
 .form_input{
-  width: 100%;
+  width: 95%;
   max-width: 200px;
 }
 .messg_area{
@@ -490,13 +502,18 @@ html {
 } */
 [class*="cols-"] {
   padding-bottom: 25px;
-  width: 45%!important;
+  width: 45%;
+  min-width: 170px;
 }
-/* @media only screen and (min-width: 768px){
-	.col-1 {width: 45%;}
-	.col-2 {width: 45%;}
+@media only screen and (min-width: 768px){
+	.cols-1 {width: 45%;}
+	.cols-2 {width: 45%;}
 }
 @media only screen and (min-width: 600px) {
-	.col-s-1 {width: 45%;}
-	.col-s-2 {width: 45%;}
-} */
+	.cols-s-1 {width: 45%;}
+	.cols-s-2 {width: 45%;}
+}
+@media screen and (max-width: 700px){
+  .main_data_form{justify-content: center;}
+  .cols-2{min-height: fit-content;}
+}
