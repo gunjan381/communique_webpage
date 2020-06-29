@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jgp" href="logo.jpg">
     <title>Communiqué IIT Kharagpur</title>
-    <link rel="stylesheet" href="gunjan.css">
-    <link rel="stylesheet" type="text/css" href="finals.css">
+    <link rel="stylesheet" type="text/css" href="gunjan.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </script>
+    <link rel="stylesheet" type="text/css" href="finals.css">
   </head>
 <body>
 	<!--<nav>
@@ -79,13 +77,13 @@
 		</div>
 	</div>
 </section>
-<section id="practicearea">
+<section id="practicearea" style="box-sizing:content-box!important;">
 	<div class="abcd">
 		<div class="left">
 			<div class="centered">
 				<!--<h1 id="heading"><b>PRACTICE</b><br>AREAS </h1>-->
-				<h1><b><span style="text-align: left;font-size:4vw;">PRACTICE</span></b></h1>
-	      <span style= "font-size:4vw;text-align: left;line-height:90%">AREAS</span>
+				<h1><b><span style="text-align: left;font-size:30pt;">PRACTICE</span></b></h1>
+	      <span style= "font-size:28pt;text-align: left;line-height:90%">AREAS</span>
 			</div>
 		</div>
 
@@ -165,7 +163,7 @@
      <div class="ourvision" style="font-family:sans-serif; padding-top:50px;">
   <center><b>OUR</b> VISION </center></div>
   </h1>
-  <div style="height:50px;">
+  <div class="ourvision-height" style="height:50px;">
 
 
   </div>
@@ -175,11 +173,11 @@
   <p style="color:white;">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
   </p> </center> </br>
   <center><p style="color:white;">
-  This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+  This is a great space to write long text about your company and your services.Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
   </p></center> </br>
-  <center><p style="color:white;">
+  <!--<center><p style="color:white;">
     At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum.
-  </p></center>
+  </p></center>-->
 
   </div>
   </div>
@@ -241,14 +239,14 @@
 <script src="navbar.js"></script>
 
 <!-- End of part2-->
-
-<div class="header-form" id="form">
+<section id="form">
+<div class="header-form">
   <h4><center>For any general inquiries, please fill in the following contact form:</center></h4>
 </div>
 <form name="contact_form" method="POST" action="execution.php">
 <div class="row-form">
   <div class="main_data_form">
-    <div class="col-1 col-s-1">
+    <div class="cols-1 cols-s-1">
       <label for="name" id="lab">Name*</label><br>
       <input class="form_input" type="text" name="Name" required><br><br>
       <label for="email" id="lab">Email*</label><br>
@@ -256,7 +254,7 @@
       <label for="subject" id="lab">Subject*</label><br>
       <input class="form_input" type="text" name="subject" required><br>
     </div>
-    <div class="col-2 col-s-2">
+    <div class="cols-2 cols-s-2">
       <label for="message" id="lab">Message*</label><br>
       <textarea class="form_input messg_area" name="message" required></textarea><br>
     </div>
@@ -266,7 +264,7 @@
     <input type="submit" name="Submit" value="Send">
   </div>
 </form>
-
+</section>
 <!-- End of form-->
 
 <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
@@ -353,3 +351,4 @@
 <script src="validation.js"></script>
 
 </html>
+
