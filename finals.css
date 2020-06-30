@@ -56,3 +56,13 @@ html {
   height: 80%;
   min-height: 75px;
 }
+
+
+body {
+  background-color: #584E4A;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; }

@@ -1,4 +1,4 @@
-/*AbD content begins */
+AbD content begins */
 /** {
   -webkit-box-sizing: content-box !important;
      -moz-box-sizing: content-box !important;
@@ -518,4 +518,74 @@ html {
 @media screen and (max-width: 700px){
   .main_data_form{justify-content: center;}
   .cols-2{min-height: fit-content;}
+}
+
+@keyframes loader {
+  0%, 10%, 100% {
+    width: 80px;
+    height: 80px; }
+  65% {
+    width: 160px;
+    height: 160px; } }
+@keyframes loaderBlock {
+  0%, 30% {
+    transform: rotate(0); }
+  55% {
+    background-color: #F37272; }
+  100% {
+    transform: rotate(90deg); } }
+@keyframes loaderBlockInverse {
+  0%, 20% {
+    transform: rotate(0); }
+  55% {
+    background-color: #F37272; }
+  100% {
+    transform: rotate(-90deg); } }
+.preloader_loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: loader 1.2s infinite ease-in-out; }
+  .preloader_loader span {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #EE4040;
+    animation: loaderBlock 1.2s infinite ease-in-out both; }
+    .preloader_loader span:nth-child(1) {
+      top: 0;
+      left: 0; }
+    .preloader_loader span:nth-child(2) {
+      top: 0;
+      right: 0;
+      animation: loaderBlockInverse 1.2s infinite ease-in-out both; }
+    .preloader_loader span:nth-child(3) {
+      bottom: 0;
+      left: 0;
+      animation: loaderBlockInverse 1.2s infinite ease-in-out both; }
+    .preloader_loader span:nth-child(4) {
+      bottom: 0;
+      right: 0; }
+
+.preloader_communique {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 100%; }
+.preloader{
+  background-color: #584E4A;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 100;
+}
+.content123
+{
+  display: none;
 }
