@@ -1,4 +1,5 @@
-$().ready(function() {
+
+$(window).ready(function() {
     $("form[name='contact_form']").validate({
         rules: {
             Email: {
