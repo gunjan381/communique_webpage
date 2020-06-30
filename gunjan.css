@@ -253,9 +253,9 @@ body{
   /*background-color: rgb(102, 0, 102);*/
   background:linear-gradient(to right, #993366 0%, #ff3399 100%);;
   margin: 0;
-  padding-top: 75px;
+  padding-top: 3%;
   padding-left:  5%;
-  padding-bottom: 20px;
+  padding-bottom: 3%;
 }
 
 .left {
@@ -320,11 +320,13 @@ ul.b{
   .rightcontent {
    width: 100%;
    margin: 0;
-   height:720px;
+   height:auto;
+   min-height: fit-content;
    /*height:800px;*/
   }
    .abcd{
     padding: 0;
+    min-height: fit-content;
    }
    .parallax {
     height: 500px;
@@ -334,6 +336,7 @@ ul.b{
     height: 200px;
     margin:0;
     position:relative;
+    min-height: fit-content;
   }
   .content {
     width: 90%;
