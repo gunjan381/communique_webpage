@@ -203,8 +203,9 @@ body{
 	background-size: cover;
 }
 .abcd{
-  height: 800px;
+  height: 400px;
   background-color: black;
+  min-height: fit-content;
 }
 
 .content {
@@ -270,7 +271,8 @@ body{
   color:white;
 }
 #practicearea{
-  height: 900px;
+  /* height: 800px; */
+  min-height: fit-content;
 }
 /*AbD content*/
 /*#practicearea .list1{
@@ -400,7 +402,6 @@ hr{ border-style: solid;
 /*End of part 2*/
 .accordion-section{
   background: linear-gradient(to top left, #ffff66 0%, #6699ff 100%);
-  height:600px;
   padding-top: 50px;
 }
 .container h2 {
@@ -519,6 +520,21 @@ html {
   .main_data_form{justify-content: center;}
   .cols-2{min-height: fit-content;}
 }
+
+/* FAQ */
+.container_width{
+  width:94%!important;
+  padding-left: 3%!important;
+  padding-right: 3%!important;
+}
+.faq_bg{
+  min-height: fit-content!important;
+  margin-top: 0px!important;
+  padding-bottom: 100px;
+}
+
+
+/* Preloader */
 
 @keyframes loader {
   0%, 10%, 100% {
