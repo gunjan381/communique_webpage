@@ -259,7 +259,6 @@ body{
 }
 
 .left {
-  display: inline-block;
   height: 900px;
   left: 0;
   width: 45%;
