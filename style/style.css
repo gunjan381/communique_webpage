@@ -6,7 +6,7 @@ html, body{
 .slideshow_container{
   width:100%;
   background-color: black;
-  height: 1000px;
+  height: 50vw;
 }
 
 .slideshow img {
@@ -21,15 +21,15 @@ html, body{
   position: relative;
   width: 60%;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 3vw;
   margin-left: auto;
   margin-right: auto;
 }
 
 .slides{
   position: relative;
-  width:100%;
-  height: 50%;
+  width: 100%;
+  height: 30vw;
   overflow: hidden;
 }
 
@@ -86,12 +86,12 @@ html, body{
 .slide_column{
   display: inline-block;
   width: 25%;
-  height: 280px;
+  height: 10vw; 
 }
 
 .slide_column img{
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 
 .slide_thumb{
@@ -114,15 +114,23 @@ html, body{
 }
 
 @media screen and (max-width:1024px){
+  .slideshow{
+    width:90%;
+  }
+
   .slide_column{
     width:33.33%;
   }
 
+  .slides{
+    height: 50vw;
+  }
+
   .slide_column{
-    height: 200px;
+    height: 20vw;
   }
 
   .slideshow_container{
-    height: 800px;
+    height: 85vw;
   }
 }
