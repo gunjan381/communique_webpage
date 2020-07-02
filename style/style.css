@@ -1,6 +1,7 @@
 html, body{
     margin:0px;
     padding:0px;
+    scroll-behavior: smooth;
 }
 
 .slideshow_container{
