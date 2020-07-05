@@ -250,7 +250,7 @@ body{
   list-style-type: none;
   font-size: 200%;
   right:0;
-  height:900px;
+  height:800px;
   width:60%;
   position: relative;
   overflow-x: hidden;
@@ -263,7 +263,7 @@ body{
 }
 
 .left {
-  height: 900px;
+  height: 800px;
   left: 0;
   width: 40%;
   position: relative;
