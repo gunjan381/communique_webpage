@@ -204,7 +204,7 @@ body{
 	background-size: cover;
 }
 .abcd{
-  height: 900px;
+  height: auto;
   background-color: black;
   min-height: fit-content;
   display: flex;
@@ -250,7 +250,7 @@ body{
   list-style-type: none;
   font-size: 200%;
   right:0;
-  height:800px;
+  height:auto;
   width:60%;
   position: relative;
   overflow-x: hidden;
@@ -263,7 +263,7 @@ body{
 }
 
 .left {
-  height: 800px;
+  height: auto;
   left: 0;
   width: 40%;
   position: relative;
@@ -274,7 +274,7 @@ body{
   color:white;
 }
 #practicearea{
-  height: 900px;
+  height: auto;
   min-height: fit-content;
 }
 /*AbD content*/
