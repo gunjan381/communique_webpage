@@ -14,16 +14,16 @@ function showSlides(n){
     var i;
     var prevSlide;
     var slides = document.getElementsByClassName("slide");
-    var dots = document.getElementsByClassName("slide_thumb");
+    // var dots = document.getElementsByClassName("slide_thumb");
     var captionText = document.getElementById("caption");
-    var slide_row = document.getElementsByClassName("slide_row")[0];
-    var slide_row_width = slide_row.scrollWidth;
+    // var slide_row = document.getElementsByClassName("slide_row")[0];
+    // var slide_row_width = slide_row.scrollWidth;
     var captionList = ["First Caption","Second Caption","Your Caption","My Caption","Our Caption","Cq Caption"];
     n = slideIndex;
     prevSlide = slideIndex - 1;
     if (n > slides.length){
         slideIndex = 1
-        slide_row.scrollTo(slide_row.scrollLeft - slide_row_width,0);
+        // slide_row.scrollTo(slide_row.scrollLeft - slide_row_width,0);
         prevSlide = slides.length;
     }
     if (n < 1){
@@ -43,13 +43,13 @@ function showSlides(n){
         slides[slideIndex-1].style.display = "block";
         movedoutSlide.style.transform = "translateX(0px)";
     },2000);
-    for (i=0;i<slides.length;i++){
-        dots[i].className = dots[i].className.replace(" slide_active", "");
-    }
-    dots[slideIndex-1].className += " slide_active";
-    if (n<slides.length){
-        slide_row.scrollTo(slide_row.scrollLeft + (slide_row_width/6),0);
-    }
+    // for (i=0;i<slides.length;i++){
+    //     dots[i].className = dots[i].className.replace(" slide_active", "");
+    // }
+    // dots[slideIndex-1].className += " slide_active";
+    // if (n<slides.length){
+    //     slide_row.scrollTo(slide_row.scrollLeft + (slide_row_width/6),0);
+    // }
 }
 
 function slidesautomove(){

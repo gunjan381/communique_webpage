@@ -7,7 +7,7 @@ html, body{
 .slideshow_container{
   width:100%;
   background-color: black;
-  height: 50vw;
+  height: 40vw;
 }
 
 .slideshow img {
@@ -138,6 +138,12 @@ html, body{
   }
 
   .slideshow_container{
-    height: 85vw;
+    height: 60vw;
+  }
+}
+
+@media screen and (max-width:500px){
+  .slideshow_container{ 
+    height:65vw;
   }
 }
