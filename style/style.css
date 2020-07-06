@@ -31,7 +31,7 @@ html, body{
   position: relative;
   width: 100%;
   height: 30vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .slide{
@@ -82,6 +82,12 @@ html, body{
   overflow-x: scroll;
   white-space: nowrap;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slides_row::-webkit-scrollbar{
+  display: none;
 }
 
 .slide_column{
