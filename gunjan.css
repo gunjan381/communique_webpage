@@ -218,7 +218,7 @@ body{
   margin: 0;
   height: 100%;
   background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
   color: #f1f1f1;
   width: 40%;
 }
@@ -350,6 +350,7 @@ ul.b{
     top:25%;
     left: 5%;
     display: flex;
+    background: rgba(0, 0, 0, 0.6);
   }
   #practicearea{
     height: 1020px;
