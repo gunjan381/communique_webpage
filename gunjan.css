@@ -186,6 +186,15 @@ body{
     opacity:1;
   }
 }
+.listheading{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: black;
+}
+.listparagraph{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+  color: white;
+}
 .paragraphs{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 15px;
@@ -247,7 +256,7 @@ body{
 	font-weight: 700;
 }
 .rightcontent {
-  list-style-type: none;
+  list-style-type:square;
   font-size: 200%;
   right:0;
   height:auto;
@@ -322,15 +331,17 @@ ul.b{
             box-sizing: content-box !important;
   }
   .rightcontent {
-   width: 100%;
+   width: 90%;
    margin: 0;
-   height:800px;
+   height:auto;
    min-height: fit-content;
+   padding-left: 10%;
+   padding-right: 5%;
    /*height:800px;*/
   }
    .abcd{
     padding: 0;
-    height: 100px;
+    height: auto;
     min-height: fit-content;
    }
    .parallax {
@@ -353,7 +364,7 @@ ul.b{
     background: rgba(0, 0, 0, 0.6);
   }
   #practicearea{
-    height: 1020px;
+    height: auto;
     min-height: fit-content;
   }
   .right {
