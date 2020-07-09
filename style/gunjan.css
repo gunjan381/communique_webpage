@@ -455,8 +455,9 @@ hr{ border-style: solid;
 }
 /*End of part 2*/
 .accordion-section{
-  background: linear-gradient(to top left, #ffff66 0%, #6699ff 100%);
+  background: linear-gradient(to left, #a7fffb 0%, #6699ff 100%);
   padding-top: 50px;
+  
 }
 .container h2 {
     font-family: Arial, Verdana;
@@ -465,8 +466,10 @@ hr{ border-style: solid;
     color: #091f2f;
 }
 .accordion-section .panel-default > .panel-heading {
-    border: 0;
-    /*background: #f4f4f4*/background: linear-gradient(to top left, #ffff66 0%, #6699ff 100%);
+    border: 5px solid teal;
+    background-color: rgb(179, 233, 255);
+    /* border-color: teal; */
+    /* background: #f4f4f4background: linear-gradient(to left, #00948d 0%, #022979 100%); */
     padding: 0;
 }
 .accordion-section .panel-default .panel-title a {
