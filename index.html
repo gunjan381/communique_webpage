@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 	<link rel="stylesheet" type="text/css" href="style/gunjan.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/form.css">
   </head>
 <body>
 	<!--<nav>
@@ -64,7 +65,7 @@
 							<a class="nav-link" href="#our-attorneys">OUR ATTORNEYS</a>
 						</li>
 		        		<li class="nav-item">
-							<a class="nav-link"   href="#form" >FORM</a>
+							<a class="nav-link"   href="#form" >CONTACT US</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="FAQs.html">FAQs</a>   
@@ -218,15 +219,15 @@
 		  </div> -->
 		 		<div class="attorneys_box">
 		  			<div class="attorneys_card" >
-		  				<img src="img/po.jpg" alt="po" width="100%" height="200">
+		  				<img src="img/po.jpg" alt="po" class="OA_image" >
 		  				<center>
 			  				</br>
 			  				<div class="OA_name" > AIDEN WATERS</br></br>
 			  				</div>
 			  				<div class="OA_designation" >   PARTNER</br></br>
-			  					<img src="fb.png" width="50px" height="50px" class="icons">
-			   					<img src="ln.png" width="50px" height="50px" class="icons">
-			   					<img src="gmail.png" width="50px" height="50px" class="icons">
+			  					<img src="img/fb.png" class="OA_icons">
+			   					<img src="img/ln.png" class="OA_icons">
+			   					<img src="img/gmail.png" class="OA_icons">
 			  				</br>
 			   				<hr>Tel: 123-456-7890</br>
 			  					info@mysite.com
@@ -234,30 +235,30 @@
 		 				</center>
 		  			</div>
 		  			<div class="attorneys_card" >
-	  					<img src="img/po.jpg" alt="po" width="100%" height="200">
+	  					<img src="img/po.jpg" alt="po" class="OA_image">
 	  					<center>
 		  					</br>
 		  					<div class="OA_name" > JULIA KNOLL</br></br>
 		  					</div>
 		    				<div class="OA_designation" > PARTNER</br></br>
-		    					<img src="fb.png" width="50px" height="50px" class="icons">
-			   					<img src="ln.png" width="50px" height="50px" class="icons">
-			   					<img src="gmail.png" width="50px" height="50px" class="icons">
-			  				</br>
+		    					<img src="img/fb.png" class="OA_icons">
+			   					<img src="img/ln.png" class="OA_icons">
+								<img src="img/gmail.png" class="OA_icons">
+							</br>
 		     				<hr>Tel: 123-456-7890</br>
 		  						info@mysite.com
 		   					</div>
 		   				</center>
 		  			</div>
 	  				<div class="attorneys_card">
-	  					<img src="img/po.jpg" alt="po" width="100%" height="200">
+	  					<img src="img/po.jpg" alt="po" class="OA_image">
 	  					<center>
 		  					</br><div class="OA_name" > JAMES LOPEZ</br></br>
 		  					</div>
 		     				<div class="OA_designation">PARTNER</br></br>
-		     					<img src="fb.png" width="50px" height="50px" class="icons">
-			   					<img src="ln.png" width="50px" height="50px" class="icons">
-			   					<img src="gmail.png" width="50px" height="50px" class="icons">
+								<img src="img/fb.png" class="OA_icons">
+								<img src="img/ln.png" class="OA_icons">
+								<img src="img/gmail.png" class="OA_icons">
 			  				</br>
 	        				<hr> Tel: 123-456-7890</br>
 		  						info@mysite.com
@@ -322,32 +323,41 @@
 		</section>
 
 	<!-- End of part2-->
-		<section id="form">
-		<div class="header-form">
-		  <h4><center>For any general inquiries, please fill in the following contact form:</center></h4>
+	<section id="form">
+		<div class="form_div">
+		<div class="form_header">
+			<h4><center>For any general inquiries, please fill in the following contact form:</center></h4>
 		</div>
 		<form name="contact_form" method="POST" action="execution.php">
-		<div class="row-form">
-		  <div class="main_data_form">
-		    <div class="cols-1 cols-s-1">
-		      <label for="name" id="lab">Name*</label><br>
-		      <input class="form_input" type="text" name="Name" required><br><br>
-		      <label for="email" id="lab">Email*</label><br>
-		      <input class="form_input" type="text" name="Email" required><br><br>
-		      <label for="subject" id="lab">Subject*</label><br>
-		      <input class="form_input" type="text" name="subject" required><br>
-		    </div>
-		    <div class="cols-2 cols-s-2">
-		      <label for="message" id="lab">Message*</label><br>
-		      <textarea class="form_input messg_area" name="message" required></textarea><br>
-		    </div>
-		  </div>
-		</div>
-		  <div class="footer-form">
-		    <input type="submit" name="Submit" value="Send">
-		  </div>
+		<div class="form_row">
+			<div class="main_data_form">
+				<div class="cols-1 cols-s-1">
+					<label for="name" id="lab">Name*</label><br>
+					<input class="form_input" type="text" name="Name" required><br><br>
+					<label for="email" id="lab">Email*</label><br>
+					<input class="form_input" type="text" name="Email" required><br><br>
+					<label for="subject" id="lab">Subject*</label><br>
+					<input class="form_input" type="text" name="subject" required><br>
+				</div>
+				<div class="cols-2 cols-s-2">
+					<label for="message" id="lab">Message*</label><br>
+					<textarea class="form_input messg_area" name="message" required></textarea><br>
+				</div>
+			</div>
+		</div>	
+			<div class="form_footer">
+				<input type="submit" name="Submit" value="Send">
+			</div>
 		</form>
-		</section>
+		<div class="contact_links">
+			<div class="contact_links_data">	
+				<a href="https://www.facebook.com/communique.iitkgp/?__cft__[0]=AZXR2H42FrCEYiCyNfsw8lKBLtxT1NsubAyxTM6H0hCak186bJuWLo0EUTMcyRJLe6Z2fzpkDyLrygp3khvY5ck00dLGB2BVpZetR8qtf1fyTdF0Bw58jkK6YXTpHIxVGiahL0Vqp_jIKmX9dtETPu-LqSL7lf0K9AZmcIIxF0pryhEuDOUaz6F5GrgFzP5Ev8M&__tn__=kC%2CP-R"><img class="contact_link_img " src="img/fb.png"></a>
+				<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fcommuniqu%25C3%25A9-iit-kharagpur%3Ffbclid%3DIwAR0CAKYb3xlyPdSXmRic-SWGL0dtR3lgfTGeebo7bqSXgIt0EIaKfPGP3dc&h=AT2g2_LwipbC907aEbcqbZ-u7Kpr7EI1sxAVcprDq5KuI-LYC2It97n0Jcdv89Kh5Jm1zmhhU8igJ1PC_YK249CG8eY_4pkO7h2DVJrJkz7pXQ1ImXD2mBR4AoOQBsyOauHQJRTSOHTlQBdmsPhHfQ" ><img class="contact_link_img" src="img/ln.png"></a>
+				<a href="https://goo.gl/maps/9TeiKJv4ePWHeTih6" ><img class="contact_link_img" src="img/gmaps.png"></a>
+			</div>
+		</div>
+		</div>
+	</section>
 	<!-- End of form-->
 	</div>
 </body>
