@@ -455,8 +455,7 @@ hr{ border-style: solid;
 }
 /*End of part 2*/
 .accordion-section{
-  background: linear-gradient(to left, #a7fffb 0%, #6699ff 100%);
-  padding-top: 50px;
+  padding-top: 100px;
   
 }
 .container h2 {
@@ -464,6 +463,9 @@ hr{ border-style: solid;
     font-weight: 600;
     font-size: 2.5rem;
     color: #091f2f;
+}
+.faq_body{
+  background: linear-gradient(to left, #a7fffb 0%, #6699ff 100%);
 }
 .accordion-section .panel-default > .panel-heading {
     border: 5px solid teal;
