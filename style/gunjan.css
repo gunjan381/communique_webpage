@@ -664,3 +664,8 @@ html {
 {
   display: none;
 }
+
+.icons
+{
+  display: inline-block;
+}
