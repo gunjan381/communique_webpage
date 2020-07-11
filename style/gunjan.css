@@ -189,6 +189,7 @@ body{
 .listheading{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: black;
+  font-size: 70%;
 }
 .listparagraph{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -423,8 +424,8 @@ hr{ border-style: solid;
   border-color: #66e0ff;
 }
 .our_attorneys_div{
-  width:100% ; 
-  min-height:fit-content; 
+  width:100% ;
+  min-height:fit-content;
   background-color:#eaf4f6;
 }
 .OA_image{
@@ -470,7 +471,7 @@ hr{ border-style: solid;
 /*End of part 2*/
 .accordion-section{
   padding-top: 100px;
-  
+
 }
 .container h2 {
     font-family: Arial, Verdana;
