@@ -18,7 +18,7 @@ function showSlides(n){
     var captionText = document.getElementById("caption");
     // var slide_row = document.getElementsByClassName("slide_row")[0];
     // var slide_row_width = slide_row.scrollWidth;
-    var captionList = ["First Caption","Second Caption","Your Caption","My Caption","Our Caption","Cq Caption"];
+    var captionList = ["Higher Studies Seminar","Young Leaders' Program","UPSC Seminar","MBA Aspirants CAT Seminar","Hidayat"];
     n = slideIndex;
     prevSlide = slideIndex - 1;
     if (n > slides.length){
