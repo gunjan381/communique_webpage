@@ -429,7 +429,7 @@ hr{ border-style: solid;
   background-color:#eaf4f6;
 }
 .OA_image{
-  width: 100%;
+  width: 200px;
   height: 200px;
 }
 .OA_image:hover{
