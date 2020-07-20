@@ -59,7 +59,8 @@ input[type=text]:focus{
   border-color: blue;
 }
 input[type=submit]{
-   background-color: #116466;
+    background-image: linear-gradient(to bottom, #f53b57, #ff3f34);
+    /* background-color: #116466; */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -73,7 +74,7 @@ input[type=submit]:hover{
   opacity: 30%;
 }
 .form_div{
-  background-image: url("../img/bg_form.jpg");
+  /* background-image: url("../img/bg_form.jpg"); */
   background-size: contain;
   background-size: 100% 100%;
   background-repeat: no-repeat;
