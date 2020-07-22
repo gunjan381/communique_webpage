@@ -1,0 +1,109 @@
+/* TOP Parralax */
+
+.parallax .content{
+
+}
+
+.parallax .content .centered{
+
+}
+
+/* Practice Area Syyle */
+#practicearea .abcd{
+
+}
+
+#practicearea .abcd .left{
+    /* background-image: linear-gradient(to right,#fe9801, #115173); */
+    /* background-image: linear-gradient(to right, #fe9801, #00918e); */
+    background-image: linear-gradient(to right, #2c3647, #11151c);
+}
+
+#practicearea .abcd .rightcontent{
+    /* background-image: linear-gradient(to right,#115173, #00918e); */
+    /* background-image: none; */
+    /* background-image: linear-gradient(to right,#ff4757, #00918e); */
+    /* background-image: linear-gradient(to right,#ea2027, #ee5a24); */
+    background-color: #a52422;
+}
+
+#practicearea .abcd .rightcontent li{
+
+}
+
+#practicearea .abcd .rightcontent li::marker{
+    color:white;
+}
+
+#practicearea .abcd .rightcontent li h2{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Our Vision Style */
+#our-vision .bg{
+    /* background-image: linear-gradient(to bottom, #006266, #009432); */
+    background-color: #297373;
+}
+
+#our-vision .bg .ourvision{
+
+}
+
+#our-vision .bg .vision-text{
+
+}
+
+/* Executive Team */
+#our-attorneys{
+
+}
+
+#our-attorneys .our_attorneys_div{
+
+}
+
+#our-attorneys .OA_heading{
+    /* background-image: linear-gradient(to bottom,#05386b, #0652dd); */
+    color: white;
+    background-color: #212d40;
+}
+
+#our-attorneys .our_attorneys .attorneys_box{
+    /* background-color: black; */
+}
+
+.OA_text .attorneys_card{
+    background-color: #212d40; 
+}
+
+.OA_text .attorneys_box{
+    /* background-color: blue; */
+}
+
+/* Slideshow */
+#slideshow .slideshow_container{
+    background-image: linear-gradient(to bottom right, #297373 ,#079992 );
+}
+
+/* Form */
+#form .form_div{
+    background-color: #100e17;
+    /* background-color: teal; */
+}
+
+#form .form_div .form_header{
+    background-image: linear-gradient(to bottom, #f53b57, #ff3f34);
+}
+
+#form .form_div form{
+
+}
+
+#form .form_div .contact_links{
+    background-color: #100e17;
+}
+
+#form .form_div .contact_links .contact_links_data{
+
+}
