@@ -430,6 +430,7 @@ hr{ border-style: solid;
 }
 .OA_image{
   width: 100%;
+  transition: transform 1s;
 }
 .OA_image:hover{
   transform: scale(1.1);
