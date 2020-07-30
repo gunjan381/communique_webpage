@@ -152,6 +152,7 @@ input[type=submit]:hover{
   margin-right: auto;
   margin-top:30px;
   border-radius: 7px;
+
 	/* margin-left: -260px; */
   /* -moz-border-radius: 7px;
   -webkit-border-radius: 7px; */
@@ -165,7 +166,7 @@ input[type=submit]:hover{
 	border-radius: 0;
 	line-height: 22px;
 	background-color: #fbfbfb;
-	padding: 13px 13px 13px 54px;
+	padding: 10px;
 	margin-bottom: 10px;
 	width:100%;
 	-webkit-box-sizing: border-box;
@@ -181,7 +182,7 @@ input[type=submit]:hover{
 	border: 3px solid #3498db;
 	color: #3498db;
 	outline: none;
-  padding: 13px 13px 13px 54px;
+  padding: 10px;
 }
 
 .focused{
@@ -246,9 +247,10 @@ input:focus, textarea:focus {
 	cursor:pointer;
 	background-color: #3498db;
 	color:white;
-	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
+	font-size:12px;
+	padding-top:8px;
+  padding-bottom:8px;
+  padding: 8px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -260,14 +262,20 @@ input:focus, textarea:focus {
 	background-color: rgba(0,0,0,0);
 	color: #0493bd;
 }
-	
+  
+/* .submit{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+} */
+
 .submit:hover {
 	color: #3498db;
 }
 	
 .ease {
 	width: 0px;
-	height: 74px;
+	height: 37px;
 	background-color: #fbfbfb;
 	-webkit-transition: .3s ease;
 	-moz-transition: .3s ease;
@@ -291,6 +299,10 @@ input:focus, textarea:focus {
 		padding-right: 3%;
 	}
 } */
+
+label.error{
+  color: #3498db;
+}
 
 @media only screen and (max-width: 1024px){
   #form-div{
