@@ -224,13 +224,14 @@
 		  <!-- <div style="float :left ;width:5%;height:3px;">
 		  </div> -->
 
-      <!--DIVYAM-->
-		 		<div class="attorneys_box">
-		  			<div class="attorneys_card" >
+	  <!--DIVYAM-->
+		  	<div id="exampleSlider">
+		 		<div class="attorneys_box MS-content">
+		  			<div class="attorneys_card item" >
 						<img src="img/abhishek_c.JPG" alt="po" class="OA_image" >
 		  				<center>
 			  				</br>
-			  				<div class="OA_name" > ABHISHEK</br> CHANDAK</br>
+			  				<div class="OA_name" > ABHISHEK CHANDAK</br>
 			  				</div>
 			  				<div class="OA_designation" >  GOVERNOR</br></br>
 			  					<a href="https://www.facebook.com/abhishek.chandak.391" target="_blank"> <img src="img/fb.png" class="OA_icons"></a>
@@ -247,11 +248,11 @@
 		  			</div>
 
         <!--ADARSH-->
-		  			<div class="attorneys_card" >
+		  			<div class="attorneys_card item" >
 	  					<img src="img/anushka.jpg" alt="po" class="OA_image">
 	  					<center>
 		  					</br>
-		  					<div class="OA_name" > ANUSHKA</br> AGRAWAL</br>
+		  					<div class="OA_name" > ANUSHKA AGRAWAL</br>
 		  					</div>
 		    				<div class="OA_designation" > GOVERNOR</br></br>
 		    					<a href="https://www.facebook.com/anushka.agrawal.9406" target="_blank"> <img src="img/fb.png" class="OA_icons"></a>
@@ -268,11 +269,11 @@
 		  			</div>
 
             <!--prakhar-->
-            <div class="attorneys_card" >
+            <div class="attorneys_card item" >
 	  					<img src="img/pratik.jpg" alt="po" class="OA_image">
 	  					<center>
 		  					</br>
-		  					<div class="OA_name" > PRATIK </br>BANKA</br>
+		  					<div class="OA_name" > PRATIK BANKA</br>
 		  					</div>
 		    				<div class="OA_designation" > GOVERNOR</br></br>
 		    					<a href="https://www.facebook.com/pratik.banka.39" target="_blank"> <img src="img/fb.png" class="OA_icons"></a>
@@ -287,14 +288,14 @@
 		   					</div>
 		   				</center>
 		  			</div>
-      </div>
-      <div class="attorneys_box">
+      <!-- </div>
+      <div class="attorneys_box"> -->
 
         <!--SHAILESH-->
-	  				<div class="attorneys_card">
+	  				<div class="attorneys_card item">
 	  					<img src="img/apoorva.jpg" alt="po" class="OA_image">
 	  					<center>
-              </br><div class="OA_name" > APOORVA</br> VASHISTH</br>
+              </br><div class="OA_name" > APOORVA VASHISTH</br>
 		  					</div>
 		     				<div class="OA_designation">COORDINATOR</br></br>
 								<a href="https://www.facebook.com/apoorva.vashisth.5851" target="_blank"> <img src="img/fb.png" class="OA_icons"></a>
@@ -311,11 +312,11 @@
 		    		</div>
 
           <!--ANANYA-->
-            <div class="attorneys_card" >
+            <div class="attorneys_card item" >
 	  					<img src="img/abhishek_j.JPG" alt="po" class="OA_image">
 	  					<center>
 		  					</br>
-		  					<div class="OA_name" > ABHISHEK</br> JANGID</br>
+		  					<div class="OA_name" > ABHISHEK JANGID</br>
 		  					</div>
 		    				<div class="OA_designation" > COORDINATOR</br></br>
 		    					<a href="https://www.facebook.com/profile.php?id=100027504585896" target="_blank"> <img src="img/fb.png" class="OA_icons"></a>
@@ -331,11 +332,11 @@
 		  			</div>
 
           <!--SUMIT-->
-            <div class="attorneys_card" >
+            <div class="attorneys_card item" >
 	  					<img src="img/pradipti.jpg" alt="po" class="OA_image">
 	  					<center>
 		  					</br>
-		  					<div class="OA_name" > PRADIPTI</br> THAKUR</br>
+		  					<div class="OA_name" > PRADIPTI THAKUR</br>
 		  					</div>
 		    				<div class="OA_designation" > COORDINATOR</br></br>
 		    					<a href="https://www.facebook.com/pradipti.thakur.507" target="_blank"> <img src="img/fb.png" class="OA_icons"></a>
@@ -349,8 +350,13 @@
               -->
 		   					</div>
 		   				</center>
-		  			</div>
-
+					  </div>
+					  
+					<div class="MS-controls">
+						<button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+						<button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+					</div>
+		 		</div>
 
 
 
@@ -488,6 +494,7 @@
 <script src="script/form_validation.js"></script>
 <script src="script/script.js"></script>
 <!-- <script src="script/preloader.js"></script> -->
+<script src="multislider/js/multislider.js"></script>
 <script type="text/javascript">
 	$(window).on('load',function() {
     	$(".preloader").fadeOut(2200, function() {
@@ -501,5 +508,13 @@
         }, 10);
     }
 }
+$('#exampleSlider').multislider({
+	interval:2500,
+	duration:500
+});
+// $('#exampleSlider').multislider('pause');
+// for(var i=0;i<6;i++){
+// 	$('#exampleSlider').multislider('next');
+// }
 </script>
 </html>

@@ -423,6 +423,36 @@ ul.b{
 hr{ border-style: solid;
   border-color: #66e0ff;
 }
+#exampleSlider {
+  position: relative;
+}
+#exampleSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 5%;
+  padding-bottom: 20px;
+}
+#exampleSlider .MS-content .item {
+  display: inline-block;
+  width: 18%;
+  margin: 0 1%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 96%;
+  white-space: normal;
+}
+#exampleSlider .MS-controls button {
+  position: absolute;
+  top: 44%;
+
+}
+#exampleSlider .MS-controls .MS-left {
+  left: 10px;
+}
+#exampleSlider .MS-controls .MS-right {
+  right: 10px;
+}
 .our_attorneys_div{
   width:100% ;
   min-height:fit-content;
@@ -449,6 +479,7 @@ hr{ border-style: solid;
 }
 .OA_designation{
   color: #41e8d2;
+  padding-top: 20px;
 }
 .OA_icons{
   height: 40px;
@@ -458,19 +489,38 @@ hr{ border-style: solid;
   opacity: 40%;
 }
 .attorneys_box{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80%;
-  margin: 0 auto;
+  /* display: -webkit-inline-box; */
+  /* flex-wrap: wrap;
+  justify-content: space-evenly; */
+  width: 90%;
+  margin: 0 auto; 
+}  
+ .attorneys_card{
+  /* min-width: 170px;
+  max-width: 300px;  */
+  padding: 1vw;
+
 }
-.attorneys_card{
-  width:25%;
-  min-width: 170px;
-  max-width: 300px;
-  padding: 20px;
-  margin-bottom: 20px;
+@media screen and (max-width:1024px){
+  .item{
+    width: 27%!important;
+  }
+  .attorneys_card{
+    padding: 2vw!important;
+  }
+  .OA_name{
+    margin-top: 10px;
+  }
 }
+@media screen and (max-width:500px){
+  .item{
+    width: 93.6%!important;
+  }
+  .OA_image:hover{
+    transform: scale(1.025);
+  }
+}
+
 /*End of part 2*/
 .accordion-section{
   padding-top: 100px;
