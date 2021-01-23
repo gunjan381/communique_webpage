@@ -1,1 +1,2 @@
-# communique_webpage
+# Communique_webpage
+Official Soft Skills society.
